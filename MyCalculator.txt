@@ -1,0 +1,39 @@
+package week1.day2;
+
+public class Calculator {
+	public int addNum (int  num1,int num2,int num3) {
+		return (num1 + num2 + num3);
+	}
+
+	public int subNum (int  num1,int num2) {
+		return num1 - num2;
+	}
+	
+	public double multiplyNum (double  num1,double num2) {
+		double product = num1 * num2;
+		return product;
+	}
+	
+	public float divideNum (float num1, float num2) {
+		return num1/num2;
+	}
+}
+
+*********************************************************************************
+package week1.day2;
+
+public class MyCalculator {
+public static void main(String[] args) {
+	
+	Calculator object1 = new Calculator();
+	//Adding three numbers
+	int Result1 = object1.addNum(10,25,95);
+	System.out.println(Result1);
+	//Subtracting two numbers
+	System.out.println(object1.subNum(10, 25));
+	//Multiplying two numbers
+	System.out.println(object1.multiplyNum(54.93, 88.90));
+	//Divide two numbers
+	System.out.println(object1.divideNum(25.05f, 5.5f));
+}
+}
